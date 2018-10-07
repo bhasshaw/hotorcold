@@ -81,15 +81,15 @@ export default class Game extends React.Component {
                     onGenerateAuralUpdate={() => this.generateAuralUpdate()}
                 />
                 <main role="main">
-                <GuessSection
-                    feedback={feedback}
-                    guessCount={guessCount}
-                    onMakeGuess={guess => this.makeGuess(guess)}
-                />
-                <StatusSection guesses={guesses} 
-                    auralStatus={auralStatus}
-                />
-                <InfoSection />
+                    <GuessSection
+                        feedback={feedback}
+                        guessCount={guessCount}
+                        onMakeGuess={guess => this.makeGuess(guess)}
+                    />
+                    <StatusSection guesses={guesses} 
+                        auralStatus={auralStatus}
+                    />
+                    <InfoSection />
                 </main>
             </div>
         );
