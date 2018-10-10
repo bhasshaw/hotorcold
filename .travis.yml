@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: JlrzS9gjckC5tgy/q8MsNud0ycyzpedvJ2DzttPVZEGuvzKNCJL1LoBojdUGqgucuLxjUw20Ynt+oPHGWECC901hdFt6yNx4Ocfcymwbiqhyr5decit6Dx5YK1M6HS/iLoHpOcZWX0nfY21zOxAmHJFwdGYnZwJznxH7Kg9skbqtr3yRChnp3xOWxjfLiX9MzWYmoEgKpJqEUqvZgnvtBtyd045xnndy9080DWvvCqtwnEnYbLVnR/P+4Ln2WgdZpbB33DkrHuyGftRVYLRfyKjeS5N8BrHwqnP6Rx4YMIDbpD8IW8e/shA4ocdPxN0ub1Qlk2OV+GJTV71qnLyn9AoGRTFLjVgC/zJcdIugHDannRhXixDL9dP0jxa7DtkdTna9TIYYYdgm2lbHg83vwh13yz5qNuStEDIMn7W24KEJHtNnlY/YkK50BtPII3vymbtgOTTUnq4fSKrsXNUhDsLzqdfLEttrIcjfMf+MXaSDczLaeSW8ItmAxlG1QK8Azw0ho8VBg/WY9X+1fIKKUnrm/eS8zTYsXe+iWH8mxzG34FOQkg1HsmO3q9Fc0jbOY/N7wFXfTs5R9eNMoBo1hz5RslMopGbqjubIs+OmWzm130WkyvvLewpD+Nbh8ygBA4M+SR//hQTT/tF1nU5AR9vxn1/bq2/LwUIOC5dJ3U0=
+  app: safe-cliffs-36943
+  on:
+    repo: bhasshaw/hotorcold
